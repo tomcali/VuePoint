@@ -1,0 +1,138 @@
+body {
+	margin-right: 100px;
+	top: 20px;
+	/*background-image: url(images/outline.gif);*/
+	background-repeat: no-repeat;
+	background-position: 100px 20px;
+	right: 100px;
+	font-family: Helvetica, Verdana, Arial;
+}
+p {
+	font-family: Helvetica, Verdana, Arial;
+	font-size: 90%;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-top: 0px;
+	padding-top: -2px;
+	padding-bottom: 0px;
+}
+h1 {
+	font-family: Helvetica, Verdana, Arial;
+	font-size: 120%;
+	color: #172C8D;
+	font-weight: lighter;
+	padding: 0px 5px;
+	vertical-align: baseline;
+	margin-top: 0px;
+}
+.footer {
+	color: #0E2B8D;
+	font-size: 70%;
+	padding: 5px;
+}
+.booklink {
+	font-family: Helvetica, Verdana, Arial;
+	color: #0E2B8D;
+	text-decoration: none;
+}
+
+	
+.buy {
+	line-height: normal;
+	color: #0E2B8D;
+	font-size: 125%;
+	text-align: center;
+	background-color: #CCFF33;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+.about {
+	font-family: Helvetica, Verdana, Arial;
+	font-size: 110%;
+	color: #EEEEEE;
+	background-color: #0E2B8D;
+	background-position: center bottom;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-color: #EEEEEE;
+	width: 0px;
+	height: 0px;
+	margin-bottom: 0px;
+	display: table-cell;
+}
+.menutext {
+	font-size: 12px;
+	text-align: left;
+	padding: 5px;
+	height: 0px;
+	list-style-image: none;
+	list-style-type: none;
+	margin: 0px;
+	text-indent: 0px;
+	line-height: 12px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+}
+ul.menutext li a {
+	text-decoration: none;
+	color: #000000;
+	padding: 4px;
+}
+ul.menutext li a:hover {
+	color: #0E2B8D;
+}
+ul.menutext li {
+	border: 1px solid #000000;
+	background-color: #FFFFFF;
+	padding: 4px;
+}
+a {
+	color: #0E2B8D;
+	text-decoration: none;
+}
+a:link {
+	color: #0E2B8D;
+	text-decoration: none;
+}
+a:hover {
+	color: #00CCFF;
+	text-decoration: none;
+}
+
+dt {
+	font-size: 100%;
+	color: #0E2B8D;
+}
+dd {
+	font-size: 95%;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+.smalltext {
+	font-size: 85%;
+}
+ul {
+	font-size: 95%;
+	color: #000000;
+	list-style-type: disc;
+}
+.shopping {
+	float: right;
+	padding-left: 5px;
+	padding-top: 3px;
+	width:100px;
+	height:150px;
+}
+h3 {
+	font-size: 105%;
+	color: #0E2B8D;
+}
+.blue {
+	color: #0E2B8D;
+}
+#order {
+}
+#order a:link {
+	font-size: 10px;
+}
