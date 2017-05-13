@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Research Publishers LLC data entry</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+  	<heading class="container">
+  	  <div class="col-xs-12, col-md-12">
+        <h1>Research Publishers LLC</h1>
+        <h2>Data Entry screen</h2>
+      </div>
+    </heading>  
+	<!-- Form for adding new Publication -->
+	<div class="container">  
+	  <div class="panel panel-info">
+	    <div class="panel-heading">Enter a new publication</div>
+  		<div class="panel-body">
+    	  <form>
+  		 	<div class="form-group">
+   			  <label for="bookTitle">Book Title</label>
+   			  <input type="text" class="form-control" id="bookTitle" placeholder="Title">
+  			</div>
+  			<div class="form-group">
+    		  <label for="bookDesc">Description</label>
+    		  <input type="textarea" class="form-control" id="bookDesc" placeholder="Description">
+  			</div>
+  			<div class="form-group">
+    		  <label for="coverArt">Cover art</label>
+    		  <input type="file" class="form-control" id="coverArt" placeholder="Upload file">
+  			</div>
+  			<div class="form-group">
+  			  <div class="col-xs-6 col-md-6">
+    		    <label for="author">Author</label>
+    		    <input type="text" class="form-control" id="author" placeholder="Primary Author">
+    		  </div>  
+    		  <div class="col-xs-6 col-md-6">
+    		    <label for="artist">Artist</label>
+    		    <input type="text" class="form-control" id="artist" placeholder="Primary Artist">
+    		  </div>  
+  			</div>
+
+  			<div class="form-group">
+  			  <div class="col-xs-4 col-md-4">Print version
+    		    <label for="pisbn10">ISBN 10</label>
+    		    <input type="text" class="form-control" id="pisbn10" placeholder="ISBN">
+    		  </div>  
+    		  <div class="col-xs-4 col-md-4">
+    		    <label for="pisbn13">ISBN 13</label>
+    		    <input type="text" class="form-control" id="pisbn13" placeholder="ISBN">
+    		  </div>  
+    		  <div class="col-xs-4 col-md-4">
+    		    <label for="pprice">Price</label>
+    		    <input type="number" class="form-control" id="pprice" placeholder="Price">
+    		  </div>  
+
+    		  <div class="form-group">
+  			  <div class="col-xs-4 col-md-4">Electronic version
+    		    <label for="eisbn10">ISBN 10</label>
+    		    <input type="text" class="form-control" id="eisbn10" placeholder="ISBN">
+    		  </div>  
+    		  <div class="col-xs-4 col-md-4">
+    		    <label for="eisbn13">ISBN 13</label>
+    		    <input type="text" class="form-control" id="eisbn13" placeholder="ISBN">
+    		  </div>  
+    		  <div class="col-xs-4 col-md-4">
+    		    <label for="eprice">Price</label>
+    		    <input type="number" class="form-control" id="eprice" placeholder="Price">
+    		  </div>  
+    		  <br>
+    		  <button type="button" class="btn btn-primary btn-lg btn-block" id="submitBook">Submit</button>
+  			</div>
+  			</div>
+  		  </form>
+		</div>
+	  </div>		
+	</div>
+	<br>
+	<!-- Form for adding new Author -->
+	<div class="container">  
+	  <div class="panel panel-info">
+	    <div class="panel-heading">Enter a new Author</div>
+  		<div class="panel-body">
+    	  <form>
+  		 	<div class="form-group">
+   			  <label for="authName">Author's Name</label>
+   			  <input type="text" class="form-control" id="authName" placeholder="name">
+  			</div>
+  			<div class="form-group">
+    		  <label for="authBio">Author's Bio</label>
+    		  <input type="textarea" class="form-control" id="authBio" placeholder="bio">
+  			</div>
+  			<br>
+  			<button type="button" class="btn btn-primary btn-lg btn-block" id="submitAuth">Submit</button>
+  		  </form>
+  		</div>
+	  </div>
+	</div>
+	<br>
+	<!-- Form for adding new Artist -->
+	<div class="container">  
+	  <div class="panel panel-info">
+	    <div class="panel-heading">Enter a new Artist</div>
+  		<div class="panel-body">
+    	  <form>
+  		 	<div class="form-group">
+   			  <label for="artName">Artist's Name</label>
+   			  <input type="text" class="form-control" id="artName" placeholder="name">
+  			</div>
+  			<div class="form-group">
+    		  <label for="artBio">Artist's Bio</label>
+    		  <input type="textarea" class="form-control" id="artBio" placeholder="bio">
+  			</div>
+  			<br>
+  			<button type="button" class="btn btn-primary btn-lg btn-block" id="submitArt">Submit</button>
+  		  </form>
+  		</div>
+	  </div>
+	</div>  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</script>
+  </body>
+</html>
