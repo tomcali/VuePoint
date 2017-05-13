@@ -50,5 +50,12 @@ presentation = files needed for a self-running web-browser-based presentation
 
 rp-website-files = files from the current website at reserach-publishes.com
 
+## Training Resources
+We utilized a number of training resources in learning Vue.js for this project. These included Lynda.com and Udemy video courses and Packt Publishing books:
+
+Filipova, O. 2016. Learning Vue.js 2. Birmingham, Ala.: Packt. With GitHub respository https://github.com/PacktPublishing/Learning-Vuejs-2 
+
+Passaglia, A. 2017. Vue.js 2 Cookbook: Build Modern, Interactive Web Applications with Vue.js Birmingham, Ala.: Packt.
+
 
 
