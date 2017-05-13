@@ -4,3 +4,9 @@ dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
+=======
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
+>>>>>>> bf7816bfd0dc6b374542b990c2c68bfd146e43b9

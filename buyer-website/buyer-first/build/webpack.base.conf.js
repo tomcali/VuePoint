@@ -28,6 +28,18 @@ module.exports = {
   module: {
     rules: [
       {
+<<<<<<< HEAD
+=======
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        enforce: 'pre',
+        include: [resolve('src'), resolve('test')],
+        options: {
+          formatter: require('eslint-friendly-formatter')
+        }
+      },
+      {
+>>>>>>> bf7816bfd0dc6b374542b990c2c68bfd146e43b9
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig

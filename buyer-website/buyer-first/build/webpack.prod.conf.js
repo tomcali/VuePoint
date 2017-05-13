@@ -9,7 +9,13 @@ var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 
+<<<<<<< HEAD
 var env = config.build.env
+=======
+var env = process.env.NODE_ENV === 'testing'
+  ? require('../config/test.env')
+  : config.build.env
+>>>>>>> bf7816bfd0dc6b374542b990c2c68bfd146e43b9
 
 var webpackConfig = merge(baseWebpackConfig, {
   module: {
@@ -50,7 +56,13 @@ var webpackConfig = merge(baseWebpackConfig, {
     // you can customize output by editing /index.html
     // see https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
+<<<<<<< HEAD
       filename: config.build.index,
+=======
+      filename: process.env.NODE_ENV === 'testing'
+        ? 'index.html'
+        : config.build.index,
+>>>>>>> bf7816bfd0dc6b374542b990c2c68bfd146e43b9
       template: 'index.html',
       inject: true,
       minify: {
