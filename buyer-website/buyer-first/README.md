@@ -12,11 +12,25 @@ We set up a project under a new directory buyer-first
 
 vue init webpack buyer-first
 
+  This will install Vue 2.x version of the template.
+
+? Project name buyer-first
+? Project description A Vue.js project
+? Author tomcali <tmiller@toutbay.com>
+? Vue build standalone
+? Install vue-router? Yes
+? Use ESLint to lint your code? Yes
+? Pick an ESLint preset Standard
+? Setup unit tests with Karma + Mocha? Yes
+? Setup e2e tests with Nightwatch? Yes
+
+   vue-cli · Generated "buyer-first".
+
+Documentation can be found at https://vuejs-templates.github.io/webpack
+
 For subsequent work we use these three commands to get going:
 
 cd buyer-first  [go to the project directory]
-
-{vue init webpack  [accept current project name]}
 
 npm install  [brings in all the package.json modules]
 

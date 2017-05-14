@@ -11,9 +11,8 @@
       <li><a href="https://forum.vuejs.org" target="_blank">Research Reports</a></li>
       <li><a href="https://gitter.im/vuejs/vue" target="_blank">Case Studies</a></li>
       <li><a href="https://twitter.com/vuejs" target="_blank">Apps</a></li>
-      <br>
+      <!--<br>-->
       <!--<li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>-->
-      <!--<li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Client Services</a></li>-->
     </ul>
     <h2>Client Services</h2>
     <ul>
