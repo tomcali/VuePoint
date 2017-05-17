@@ -3,6 +3,46 @@ var db = require("../models");
 var passport = require("../config/passport");
 
 module.exports = function(app) {
+  // Route for creating new book/publication in the book table.
+  app.post("/api/newBook", function(req, res) {
+    db.book.create({
+      title: req.body.title,
+      version: req.body.version,
+      description: req.body.description,
+      pagecnt: req.body.pagecnt,
+      isbn10: req.body.isbn10,
+      isbn13: req.body.isbn13,
+      price: req.body.price,
+      coverart: req.body.coverart,
+      aboutcover: req.body.aboutcover,
+      outofprint: req.body.outofprint,
+      role: req.body.role,
+      author_editor1: req.body.author_editor1,
+      // author_editor2: req.body.author_editor2,
+      // author_editor3: req.body.author_editor3,
+      // author_editor4: req.body.author_editor4,
+      // author_editor5: req.body.author_editor5,
+      // author_editor6: req.body.author_editor6,
+      artist1: req.body.artist1
+      // artist2: req.body.artist2,
+      // artist3: req.body.artist3,      
+      // artist4: req.body.artist4,
+    })
+  });
+  // Route for creating new author in the author table.
+  app.post("/api/newAuth", function(req, res) {
+    Author.create({
+      author: req.body.author,
+      biography: req.body.biography
+    })
+  });
+    // Route for creating new author in the author table.
+  app.post("/api/newArt", function(req, res) {
+    Artist.create({
+      artist: req.body.artist,
+      biography: req.body.biography
+    })
+  });
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
