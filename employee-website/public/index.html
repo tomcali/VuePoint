@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Research Publishers LLC data entry</title>
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+  </head>
+  <body>
+  	<heading class="container">
+  	  <div class="col-xs-12, col-md-12">
+        <h1>Research Publishers LLC</h1>
+        <h2>Data Entry screen</h2>
+      </div>
+    </heading>  
+	<!-- Form for adding new Publication -->
+	<div class="container">  
+	  <div class="panel panel-info">
+	    <div class="panel-heading">Enter a new publication</div>
+  		<div class="panel-body">
+    	  <form id="cms">
+  		 	<div class="form-group">
+  		 	  <div class="col-xs-12 col-md-8 col-lg-8">
+   			    <label for="bookTitle">Publication Title</label>
+   			    <input type="text" class="form-control" id="bookTitle" placeholder="Title">
+   			  </div>
+   			  <div class="col-xs-6 col-md-2 col-lg-2">  
+   			    <label for="bookEdit">Edition</label>
+   			    <input type="text" class="form-control" id="bookEdit" placeholder="Edition">
+   			  </div>
+   			  <div class="col-xs-6 col-md-2 col-lg-2">  
+   			    <div class="form-group">
+  			      <label for="bookForm">Select Format</label>
+  			      <select class="form-control" id="bookForm">
+  			        <option value="Electronic">Electronic</option>
+  			        <option value="Print">Print</option>
+  			      </select>
+				</div>
+   			  </div>
+  			</div>
+  			<div class="col-xs-12 col-md-12 col-lg-12">
+  			  <div class="form-group">
+    		    <label for="bookDesc">Description</label>
+    		    <textarea class="form-control" id="bookDesc" rows="10" placeholder="Description"></textarea>
+  			  </div>
+  			</div>
+  			<div class="col-xs-12 col-md-12 col-lg-12">  
+  			  <div class="form-group">
+    		    <label for="coverArt">Cover art</label>
+    		    <input type="file" class="form-control" id="coverArt" placeholder="Upload file">
+  			  </div>
+  			</div>  
+  			
+  			<div class="form-group">
+  			  <div class="col-xs-2 col-md-2">
+  			    <div class="form-group">
+  			      <label for="role">Select Role</label>
+  			      <select class="form-control" id="role">
+  			        <option value="Author">Author</option>
+  			        <option value="Editor">Editor</option>
+  			      </select>
+				</div>
+    		  </div>  
+  			  <div class="col-xs-5 col-md-5">
+  			    <div class="form-group">
+    		      <label for="author">Author&#47Editor</label>
+    		      <select class="form-control" id="authors">
+    		        <span id="authList"></span>
+				  </select>
+				</div>  
+    		  </div>  
+    		  <div class="col-xs-5 col-md-5">
+    		    <div class="form-group">
+    		      <label for="artist">Artist</label>
+    		      <select class="form-control" id="artists">
+    		        <span id="artList"></span>
+				  </select>
+				</div>  
+    		  </div>  
+  			</div>
+
+  			<div class="form-group">
+  			  <div class="col-xs-4 col-md-4">
+    		    <label for="isbn10">ISBN 10</label>
+    		    <input type="text" class="form-control" id="isbn10" placeholder="ISBN">
+    		  </div>  
+    		  <div class="col-xs-4 col-md-4">
+    		    <label for="isbn13">ISBN 13</label>
+    		    <input type="text" class="form-control" id="isbn13" placeholder="ISBN">
+    		  </div>  
+    		  <div class="col-xs-4 col-md-4">
+    		    <label for="price">Price</label>
+    		    <input type="number" class="form-control" id="price" placeholder="Price">
+    		  </div>  
+
+    		  <div class="form-group">
+  			  <div class="col-xs-4 col-md-2">
+    		    <label for="pagecnt">Page Count</label>
+    		    <input type="text" class="form-control" id="pagecnt" placeholder="no. of pages">
+    		  </div>  
+    		  <div class="col-xs-4 col-md-2">
+    		    <label for="status">Status</label>
+    		    <input type="text" class="form-control" id="status" placeholder="Print status">
+      		    <br>
+    		  </div>  
+    		  <br>
+    		  <button type="button" href="/api/newBook" class="btn btn-primary btn-lg btn-block" id="submitBook">Submit</button>
+  			</div>
+  			</div>
+  		  </form>
+		</div>
+	  </div>		
+	</div>
+	<br>
+	<!-- Form for adding new Author -->
+	<div class="container">  
+	  <div class="panel panel-info">
+	    <div class="panel-heading">Enter a new Author</div>
+  		<div class="panel-body">
+    	  <form>
+  		 	<div class="form-group">
+   			  <label for="authName">Author's Name</label>
+   			  <input type="text" class="form-control" id="authName" placeholder="name">
+  			</div>
+  			<div class="form-group">
+    		  <label for="authBio">Author's Bio</label>
+    		  <textarea class="form-control" id="authBio" rows="10" placeholder="Biography"></textarea>
+  			</div>
+  			<br>
+  			<button type="button" class="btn btn-primary btn-lg btn-block" id="submitAuth">Submit</button>
+  		  </form>
+  		</div>
+	  </div>
+	</div>
+	<br>
+	<!-- Form for adding new Artist -->
+	<div class="container">  
+	  <div class="panel panel-info">
+	    <div class="panel-heading">Enter a new Artist</div>
+  		<div class="panel-body">
+    	  <form>
+  		 	<div class="form-group">
+   			  <label for="artName">Artist's Name</label>
+   			  <input type="text" class="form-control" id="artName" placeholder="name">
+  			</div>
+  			<div class="form-group">
+    		  <label for="artBio">Artist's Bio</label>
+    		  <textarea class="form-control" id="artBio" rows="10" placeholder="Biography"></textarea>
+  			</div>
+  			<br>
+  			<button type="button" class="btn btn-primary btn-lg btn-block" id="submitArt">Submit</button>
+  		  </form>
+  		</div>
+	  </div>
+	</div>  
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"</script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>
