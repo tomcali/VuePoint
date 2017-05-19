@@ -50,6 +50,53 @@ presentation = files needed for a self-running web-browser-based presentation
 
 rp-website-files = files from the current website at reserach-publishes.com
 
+
+## Vue.js Application Structure
+
+Drawing on example code from the Schwarzmuller Udemy course, we implemented a single-page application (SPA) using vue.js and vue-router.js, all implemented via node.js, nmp, and webpack. Much of the syntax is similar to what we expect to see in the final weeks of the bootcamp program when we will see the React framework.
+
+Our first order of business in developing the SPA was the definition of components and routes. We were less concerned about the import of source images. So what we see in the running SPA is mostly text and routing across Vue components. 
+
+Like React, Vue.js is a front-end framework that relies on a virtual DOM to provide fast rendering of web pages. And, like React, Vue provides components and routes for implementing SPAs. So we need to make fewer trips between the client front-end and the server back-end. 
+
+Vue.js also provides templating tools, so we have no need for handlebars. Here we review the file structure used in implementing the single-page application:
+
+
+  ```
+  vue-spa-vXXX
+    - node_modules
+      - src
+        - assets [static files, images]
+        - components
+          	- user
+          	 	- User.vue
+          	 	- UserDetail.vue
+          	 	- UserRequest.vue
+          	 	- UserStart.vue
+          	- Header.vue
+          	- Home.vue
+        - App.vue
+        - main.js
+        - routes.js
+    - .babelrc
+    - index.html
+    - package.json
+    - webpack.config.js
+    - server.js
+  ```
+
+Files with the .vue extension are Vue-specific, involving template code and often JavaScript code. These SPA components correspond to web pages or portions of web pages that we would associate with a multi-page application. 
+
+The use of webpack and babel opened the door to using ES6 syntax and capabilities. A review of the code will show the use of modularized code via import statements.
+
+To bring the application into operation we locate ourselves in the vue-spa directory and we use the node package manager commands:
+
+npm install
+
+npm run dev [in development mode]
+
+npm run build [in production mode]
+
 ## Training Resources
 We utilized a number of training resources in learning Vue.js for this project. These included Lynda.com and Udemy video courses and Packt Publishing books:
 
@@ -57,5 +104,7 @@ Filipova, O. 2016. Learning Vue.js 2. Birmingham, Ala.: Packt. With GitHub respo
 
 Passaglia, A. 2017. Vue.js 2 Cookbook: Build Modern, Interactive Web Applications with Vue.js Birmingham, Ala.: Packt.
 
+Schwarzmüller, M. 2017. Udemy Vue 2 Course at https://www.udemy.com/vuejs-2-the-complete-guide/ 
+This Udemy course included 18 hours of video and numerous code examples with exercises and projects. The initial code from Maximilian Schwarzmüller was essential to getting us started on the path toward building a Vue-enabled SPA.
 
 
