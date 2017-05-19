@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>VuePoint</title>
-    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="description" content="A presentation using HTML">
     <meta name="author" content="VuePoint">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -31,42 +31,65 @@
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <div id="section_title"></div>
-            <!--<BR/><BR/><BR/><BR/><BR/><BR/><h1>Introduction</h1>-->
-            <section id="start" data-background-image="" data-background-size="contain">
-                <blockquote>
-                    <ul>
-                        <li style="list-style-type: none; font-size:90px;">VuePoint</li>
-                    </ul>
-                </blockquote>
-            </section>
-            <section id="VuePoint Presentation">
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
+            
+                <!-- Slide 1 -->
+                <section id="start" data-background-image="" data-background-size="contain">
+                    <blockquote>
+                        <ul>
+                            <li style="list-style-type: none; font-size:90px;">VuePoint</li>
+                        </ul>
+                    </blockquote>
                 </section>
+                
+                <!-- Slide 2 -->
+                <section id="VuePoint Presentation">
+                    <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
+                </section>
+                
+                <!-- Slide 3 -->
                 <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
                     <blockquote>
-                        <p style="font-size:100px" data-fragment-index="1" data-autoslide="100" class="fragment"></p>
                         <p style="font-size:125px;" data-fragment-index="2" data-autoslide="2500" class="fragment">VuePoint Team</p>
                         <p style="font-size:100px;" data-fragment-index="3" data-autoslide="1500" class="fragment">Tom Miller</p>
                         <p style="font-size:100px;" data-fragment-index="4" data-autoslide="1500" class="fragment">John Johansen</p>
                         <p style="font-size:100px;" data-fragment-index="5" data-autoslide="1500" class="fragment">Chris Ward</p>
                     </blockquote>
                 </section>
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="15000"><img src="images/logo.png" alt="logo" style="margin: 20px"></section>
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="10000">
+                
+                <!-- Slide 4 -->
+                <section data-background-image="images/bg002.jpg" data-background-size="contain" data-autoslide="15000">
+                <h1>Task: <br>Reconstruct existing webpage into a single page application</h1> 
+                <img src="images/logo.png" height="400" alt="logo" style="margin: 20px">
                 </section>
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="1500"></section>
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="10000">
+                
+                <!-- Slide 5 -->
+                <section data-background-image="images/r-p001.jpg" data-background-size="contain" data-autoslide="10000">
                 </section>
-                <!-- <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="1500"></section> -->
-                <!-- <section data-background-image="images/bus-stop-chevy-chase.jpg" class="rotate180" data-background-size="contain" data-autoslide="10000"> -->
-                <!-- </section> -->
-                <!-- <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="1500"></section> -->
-                <!-- <section data-background-image="images/bus-window-view.jpg" data-background-size="contain"  class="rotate180"   data-autoslide="10000"> -->
-                <!-- </section> -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="1500"></section>
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="10000">
+
+                <!-- Slide 6 -->
+                <section data-background-image="images/r-p002.jpg" data-background-size="contain" data-autoslide="10000">
+                </section>
+
+                <!-- Slide 7 -->
+                <section data-background-image="images/r-p003.jpg" data-background-size="contain" data-autoslide="10000">
+                </section>
+
+                <!-- Slide 8 -->
+                <section data-background-image="images/1-webstorm-ide.png" data-background-size="contain" data-autoslide="100">
+                </section>
+
+                <!-- Slide 9 -->
+                <section data-background-image="images/2-structure-of-spa.png" data-background-size="contain" data-autoslide="100">
+                </section>
+
+                <!-- Slide 10 -->
+                <section data-background-image="images/3-vue-template-example.png" data-background-size="contain" data-autoslide="100">
+                </section>
+                
+                <!-- Slide 11 -->
+                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
                     <blockquote>
-<!--                         <p style="font-size:80px;" class="fragment" data-fragment-index="1" data-autoslide="5000">Busses are noisy </p>
+                    <!--<p style="font-size:80px;" class="fragment" data-fragment-index="1" data-autoslide="5000">Busses are noisy </p>
                         <p style="font-size:80px;" class="fragment" data-fragment-index="2" data-autoslide="5000">Busses can be crowded </p>
                         <p style="font-size:80px;" class="fragment" data-fragment-index="3" data-autoslide="5000">You may have a poor seat </p>
                         <p style="font-size:80px;" class="fragment" data-fragment-index="4" data-autoslide="5000">Messages do not always display </p>
@@ -76,17 +99,20 @@
                         <p style="font-size:80px;" data-fragment-index="8" data-fragment-index="3" data-autoslide="10000" class="fragment">Bottom line: It's easy to miss your stop</p> -->
                     </blockquote>
                 </section>
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="1500"></section>
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="10000">
+
+                <!-- Slide 12 -->
+                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
                     <blockquote>
                         <p style="font-size:100px;"></p>
                         <p style="font-size:100px;"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="1" data-autoslide="1500"></p>
-                        <p style="font-size:150px" class="fragment" data-fragment-index="2" data-autoslide="1500">Application Logic</p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="3" data-autoslide="1500"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="4" data-autoslide="5000"></p>
+                        <p style="font-size:100px" class="fragment" data-fragment-index="1" data-autoslide="1500">Application Logic</p>
+                        <p style="font-size:150px" class="fragment" data-fragment-index="2" data-autoslide="100"></p>
+                        <p style="font-size:100px" class="fragment" data-fragment-index="3" data-autoslide="100"></p>
+                        <p style="font-size:100px" class="fragment" data-fragment-index="4" data-autoslide="100"></p>
                     </blockquote>
                 </section>
+
+                <!-- Slide 13 -->
                 <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="100000">
                     <h1>Application Logic</h1>
                     <ul>
@@ -101,7 +127,21 @@
                         <li style="font-size:60px;">Checkout</li>
                     </ul>
                 </section>
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="1500"></section>
+
+                <!-- Slide 14 -->
+                <section data-background-image="images/4-spa-home-page.png" data-background-size="contain" data-autoslide="1500">
+                </section>
+
+                <!-- Slide 15 -->
+                <section data-background-image="images/5-spa-publications-client-services-page.png" data-background-size="contain" data-autoslide="1500">
+                </section>
+
+
+                <!-- Slide 16 -->
+                <section data-background-image="images/6-spa-user-request-page.png" data-background-size="contain" data-autoslide="1500">
+                </section>
+
+                <!-- Slide 17 -->
                 <section data-background-image="images/.jpg" data-background-size="contain" data-autoslide="10000">
                     <blockquote>
                         <p style="font-size:100px;"></p>
@@ -112,7 +152,9 @@
                         <p style="font-size:100px" class="fragment" data-fragment-index="4" data-autoslide="5000"></p>
                     </blockquote>
                 </section>
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="100000">
+
+                <!-- Slide 18 -->
+                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="10000">
                     <h1>Technologies Used</h1>
                     <ul>
                         <li style="font-size:60px;"></li>
@@ -126,74 +168,118 @@
                         <li style="font-size:60px;">Web-browser-based presentation on GitHub</li>
                     </ul>
                 </section>
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="1500"></section>
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="5000">
+
+                <!-- Slide 19 -->
+                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="100">
+                </section>
+                
+                <!-- Slide 20 -->
+                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
                     <blockquote>
                         <p style="font-size:100px;"></p>
                         <p style="font-size:100px;"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="1" data-autoslide="1500"></p>
+                        <p style="font-size:100px" class="fragment" data-fragment-index="1" data-autoslide="100"></p>
                         <p style="font-size:150px" class="fragment" data-fragment-index="2" data-autoslide="1500">The Application</p>
                         <p style="font-size:100px" class="fragment" data-fragment-index="3" data-autoslide="1500"></p>
                         <p style="font-size:100px" class="fragment" data-fragment-index="4" data-autoslide="5000"></p>
                     </blockquote>
                 </section>
+
+                <!-- Slide 21 -->
                 <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="5000">
                     <p style="font-size:100px;">Employee Logs In</p>
                 </section>
+
+                <!-- Slide 22 -->
                 <section data-background-image="images/" data-background-size="contain" data-autoslide="20000">
                 </section>
+
+                <!-- Slide 23 -->
                 <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="5000">
                     <p style="font-size:100px;">Uses application for data entry</p>
                 </section>
+
+                <!-- Slide 24 -->
                 <section data-background-image="images/" data-background-size="contain" data-autoslide="10000">
                 </section>
+
+                <!-- Slide 25 -->
                 <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="5000">
                     <p style="font-size:100px;">Buyer Selects Book</p>
                 </section>
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="10000">
+
+                <!-- Slide 26 -->
+                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
                 </section>
+
+                <!-- Slide 27 -->
                 <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="5000">
                     <p style="font-size:100px;">Reads the description</p>
                 </section>
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="10000">
+
+                <!-- Slide 28 -->
+                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
                 </section>
+
+                <!-- Slide 29 -->
                 <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="5000">
                     <p style="font-size:100px;">About the Author</p>
                 </section>
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="10000">
+
+                <!-- Slide 30 -->
+                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
                 </section>
+
+                <!-- Slide 31 -->
                 <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="2500">
                     <p style="font-size:100px;">Decides to purchase</p>
                 </section>
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="10000">
+
+                <!-- Slide 32 -->
+                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
                 </section>
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="5000"> </section>
+
+                <!-- Slide 33 -->
+                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="100"> 
+                </section>
+
+                <!-- Slide 34 -->
                 <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="10000">
                     <p style="font-size:100px;">Expands their horizons</p>
                 </section>
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="1500"></section>
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="10000">
+
+                <!-- Slide 35 -->
+                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="100">
+                </section>
+ 
+                <!-- Slide 36 -->
+                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
                     <blockquote>
                         <p style="font-size:100px;"></p>
                         <p style="font-size:100px;"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="1" data-autoslide="1500"></p>
+                        <p style="font-size:100px" class="fragment" data-fragment-index="1" data-autoslide="100"></p>
                         <p style="font-size:150px" class="fragment" data-fragment-index="2" data-autoslide="5000">Next Steps and Lessons Learned</p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="3" data-autoslide="1500"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="4" data-autoslide="1500"></p>
+                        <p style="font-size:100px" class="fragment" data-fragment-index="3" data-autoslide="100"></p>
+                        <p style="font-size:100px" class="fragment" data-fragment-index="4" data-autoslide="100"></p>
                     </blockquote>
                 </section>
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="1500"></section>
+
+                <!-- Slide 37 -->
+                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="100">
+                </section>
+
+                <!-- Slide 38 -->
                 <section data-background-image="images/" data-background-size="contain" data-autoslide="2000">
                     <blockquote>
-                        <p style="font-size:100px;"></p>
                         <p style="font-size:100px;">Thank you</p>
-                      <!--   <p style="font-size:100px" class="fragment" data-fragment-index="1" data-autoslide="1500"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="2" data-autoslide="1500"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="3" data-autoslide="1500"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="4" data-autoslide="5000"></p> -->
                     </blockquote>
                 </section>
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="500"></section>
+
+                <!-- Slide 39 -->
+                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="500">
+                </section>
+
+                <!-- Slide 40 -->
                 <section data-background-image="images/" data-background-size="contain" data-autoslide="500">
                     <blockquote>
                         <ul>
@@ -201,10 +287,11 @@
                             <li style="list-style-type: none; font-size:70px;" class="fragment" data-fragment-index="1" data-autoslide="500">Tom Miller <img src="images/tom.jpg" alt="Tom" style="margin: 20px"></li>
                             <li style="list-style-type: none; font-size:70px;" class="fragment" data-fragment-index="2" data-autoslide="500">John Johansen <img src="images/john.jpg" alt="John" style="margin: 20px"></li>
                             <li style="list-style-type: none; font-size:70px;;" class="fragment" data-fragment-index="3" data-autoslide="500">Chris Ward <img src="images/chris.jpg" alt="Chris" style="margin: 20px"></li>
-                           <!--  <li style="list-style-type: none; font-size:70px;;" class="fragment" data-fragment-index="4" data-autoslide="500"></li> -->
                         </ul>
                     </blockquote>
                 </section>
+            
+
             </section>
         </div>
     </div>
