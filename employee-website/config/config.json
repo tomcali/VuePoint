@@ -4,7 +4,8 @@
     "password": null,
     "database": "vuepoint_db",
     "host": "127.0.0.1",
-    "dialect": "sqlite"
+    "dialect": "sqlite",
+    "storage": "/Users/johnjohansen/Vuepoint/database-work/vuepoint_db"
   },
   "test": {
     "username": "root",

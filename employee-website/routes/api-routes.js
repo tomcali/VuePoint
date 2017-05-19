@@ -3,6 +3,24 @@ var db = require("../models");
 var passport = require("../config/passport");
 
 module.exports = function(app) {
+  app.get("/api/Auth", function(req, res) {
+    db.authors.findAll({})
+    .then(function(dbAuthor) {
+      res.json(dbAuthor);
+    })
+  });
+  app.get("/api/Art", function(req, res) {
+    db.artists.findAll({})
+    .then(function(dbArtist) {
+      res.json(dbArtist);
+    })
+  })
+  app.get("/api/books/", function(req, res) {
+    db.book.findAll({})
+    .then(function(dbBook) {
+      res.json(dbBook);
+    });
+  });
   // Route for creating new book/publication in the book table.
   app.post("/api/newBook", function(req, res) {
     db.book.create({

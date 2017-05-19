@@ -1,25 +1,18 @@
 module.exports = function(sequelize, DataTypes) {
 	var Book = sequelize.define("book", {
 		title: {
-			type: DataTypes.STRING,
-			allowNull: false,
-			validate: {
-				len: [1]
-			}
+			type: DataTypes.STRING
+			
+			
 		}, 
 		version: {
-			type: DataTypes.STRING,
-			allowNull: false,
-			validate: {
-				len: [1]
-			}
+			type: DataTypes.STRING
+			
 		},
 		description: {
-			type: DataTypes.STRING,
-			allowNull: false,
-			validate: {
-				len: [1]
-			}
+			type: DataTypes.STRING
+			
+			
 		},
 		pagecnt: {
 			type: DataTypes.INTEGER
@@ -32,7 +25,6 @@ module.exports = function(sequelize, DataTypes) {
 		},
 		price: {
 			type: DataTypes.INTEGER,
-			allowNull: false
 		},
 		coverart: {
 			type: DataTypes.TEXT
@@ -45,31 +37,24 @@ module.exports = function(sequelize, DataTypes) {
 		},
 		role: {
 			type: DataTypes.TEXT,
-			allowNull: false
 		},
 		author_editor1: {
 			type: DataTypes.TEXT,
-			allowNull: false
 		},
 		author_editor2: {
 			type: DataTypes.TEXT,
-			allowNull: false
 		},
 		author_editor3: {
 			type: DataTypes.TEXT,
-			allowNull: false
 		},
 		author_editor4: {
 			type: DataTypes.TEXT,
-			allowNull: false
 		},
 		author_editor5: {
 			type: DataTypes.TEXT,
-			allowNull: false
 		},
 		author_editor6: {
 			type: DataTypes.TEXT,
-			allowNull: false
 		},
 		artist1: {
 			type: DataTypes.TEXT,
