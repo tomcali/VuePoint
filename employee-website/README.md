@@ -4,4 +4,6 @@ Back-end technologies include JavaScript packages, including Node, Express, a re
 
 To use, start up the backend by typing "nodemon server.js" on the command line.  The "Data Entry screen" is named index.js in the /public directory.  It can be accessed by the browser at http://localhost:8080
 
+At this time, there is only a screen to enter new books, authors, or artists.  These data will be written to a SQLite database.  
 
+Future plans include creating a query/update screen that frontends the data entry form.  Also needs a user authentication feature.  
