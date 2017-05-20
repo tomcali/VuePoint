@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="css/reveal.css"> link rel="stylesheet" href="css/rotate180.css">
+    <link rel="stylesheet" href="css/reveal.css" link rel="stylesheet" href="css/rotate180.css">
     <link rel="stylesheet" href="css/theme/black.css" id="theme">
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -38,6 +38,7 @@
                         <ul>
                             <li style="list-style-type: none; font-size:90px;">VuePoint</li>
                         </ul>
+                      <!--   The team name comes from Vue, which is one of many technologies used in completing the project. -->
                     </blockquote>
                 </section>
                 
@@ -49,237 +50,168 @@
                 <!-- Slide 3 -->
                 <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
                     <blockquote>
-                        <p style="font-size:125px;" data-fragment-index="2" data-autoslide="2500" class="fragment">VuePoint Team</p>
-                        <p style="font-size:100px;" data-fragment-index="3" data-autoslide="1500" class="fragment">Tom Miller</p>
-                        <p style="font-size:100px;" data-fragment-index="4" data-autoslide="1500" class="fragment">John Johansen</p>
-                        <p style="font-size:100px;" data-fragment-index="5" data-autoslide="1500" class="fragment">Chris Ward</p>
+                        <p style="font-size:125px;" data-fragment-index="2" data-autoslide="5000" class="fragment">The VuePoint Team</p>
+                        <p style="font-size:100px;" data-fragment-index="3" data-autoslide="3000" class="fragment">Tom Miller</p>
+                        <p style="font-size:100px;" data-fragment-index="4" data-autoslide="3000" class="fragment">John Johansen</p>
+                        <p style="font-size:100px;" data-fragment-index="5" data-autoslide="3000" class="fragment">Chris Ward</p>
                     </blockquote>
                 </section>
                 
                 <!-- Slide 4 -->
-                <section data-background-image="images/bg002.jpg" data-background-size="contain" data-autoslide="15000">
-                <h1>Task: <br>Reconstruct existing webpage into a single page application</h1> 
-                <img src="images/logo.png" height="400" alt="logo" style="margin: 20px">
+                <section data-background-image="images/bg002.jpg" data-background-size="contain" data-autoslide="36000"><h1>The Client:</h1>
+                <table>
+                <tr><td><img src="images/logo.png" height="300" width="140" alt="logo" style="margin-right: 20px"></td>
+                <td><h1>Research Publishers LLC</h1>
+                <center><p style="font-size:60px;">Publish books and research case studies</p></center></td></tr></table>
+                <!-- The company has a website at research-publishers.com that was designed more than ten years ago. It is a simple static site that relies on frequent client requests to the server.  -->
+                <hr><h2>Two major components to project:</h2>
+                <ol>
+                    <p style="font-size:100px">
+                    <li>Reconstruct existing simple static website into a single page application</li><br>
+                    <!-- Convert the current multipage site into a single-page application, eliminating the necessity to make frequent requests of the web server. This serves the customers of Research Publishers. -->
+                    <li>Create a database-driven content management system for employees</li></p>
+                    <!-- Develop a hosted, database-driven content management system for the Research Publishers' website. This will serve the employees who have the need to add new book titles, authors, and artists in the future. -->
+                </ol><br><br><br>
+<!-- Note. Research Publishers LLC sells its books and case studies through booksellers and distributors, working in conjunction with the University of Chicago Press. All e-commerce transactions are executed online by software of that press and its distribution services. That is, research-publishes.com itself has no database or e-commerce functions. It does not collect customer information or process orders. This aspect of the website will remain intact at the conclusion of the current project. --> 
                 </section>
                 
                 <!-- Slide 5 -->
-                <section data-background-image="images/r-p001.jpg" data-background-size="contain" data-autoslide="10000">
+                <section data-background-image="images/r-p001.jpg" data-background-size="contain" data-autoslide="36000">
+                <!-- index.html screenshot -->
                 </section>
 
                 <!-- Slide 6 -->
-                <section data-background-image="images/r-p002.jpg" data-background-size="contain" data-autoslide="10000">
+                <section data-background-image="images/r-p002.jpg" data-background-size="contain" data-autoslide="36000">
+                <!-- without a tout.html screenshot -->
                 </section>
 
                 <!-- Slide 7 -->
-                <section data-background-image="images/r-p003.jpg" data-background-size="contain" data-autoslide="10000">
+                <section data-background-image="images/r-p003.jpg" data-background-size="contain" data-autoslide="36000">
+                <!-- shopping cart.html screenshot -->
                 </section>
-
+                
                 <!-- Slide 8 -->
-                <section data-background-image="images/1-webstorm-ide.png" data-background-size="contain" data-autoslide="100">
+                <section data-background-image="images/vuelogo.png" data-background-size="contain" data-autoslide="40000">
+                    <h1>Application Logic</h1>
+                    <h3>Buyer Website</h3>
+                    <ul>
+                        <li style="font-size:60px;">Definition of components and routes</li>
+                        <li style="font-size:60px;">vue.js, vue-router.js, implemented via node.js, npm, and webpack</li>
+                        <li style="font-size:60px;">Buyer visits homepage</li>
+                        <li style="font-size:60px;">Home.vue</li>
+                        <li style="font-size:60px;">User.vue</li>
+                        <li style="font-size:60px;">Publications and Client Services</li>
+                        <li style="font-size:60px;">Request a product or service</li>
+                        <li style="font-size:60px;">Checkout by submitting the request</li>
+                    </ul>
                 </section>
 
                 <!-- Slide 9 -->
-                <section data-background-image="images/2-structure-of-spa.png" data-background-size="contain" data-autoslide="100">
+                <section data-background-image="images/1-webstorm-ide.png" data-background-size="contain" data-autoslide="40000">
+                <!-- Intro to WebStorm -->
                 </section>
 
                 <!-- Slide 10 -->
-                <section data-background-image="images/3-vue-template-example.png" data-background-size="contain" data-autoslide="100">
+                <section data-background-image="images/2-structure-of-spa.png" data-background-size="contain" data-autoslide="40000">
                 </section>
-                
+
                 <!-- Slide 11 -->
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
-                    <blockquote>
-                    <!--<p style="font-size:80px;" class="fragment" data-fragment-index="1" data-autoslide="5000">Busses are noisy </p>
-                        <p style="font-size:80px;" class="fragment" data-fragment-index="2" data-autoslide="5000">Busses can be crowded </p>
-                        <p style="font-size:80px;" class="fragment" data-fragment-index="3" data-autoslide="5000">You may have a poor seat </p>
-                        <p style="font-size:80px;" class="fragment" data-fragment-index="4" data-autoslide="5000">Messages do not always display </p>
-                        <p style="font-size:80px;" class="fragment" data-fragment-index="5" data-autoslide="5000">Announcements are easy to miss</p>
-                        <p style="font-size:80px;" class="fragment" data-fragment-index="6" data-autoslide="5000">Bus drivers rarely announce stops</p>
-                        <p style="font-size:80px;" class="fragment" data-fragment-index="7" data-autoslide="5000">View to the outside is limited</p>
-                        <p style="font-size:80px;" data-fragment-index="8" data-fragment-index="3" data-autoslide="10000" class="fragment">Bottom line: It's easy to miss your stop</p> -->
-                    </blockquote>
+                <section data-background-image="images/3-vue-template-example.png" data-background-size="contain" data-autoslide="40000">
                 </section>
 
                 <!-- Slide 12 -->
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
-                    <blockquote>
-                        <p style="font-size:100px;"></p>
-                        <p style="font-size:100px;"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="1" data-autoslide="1500">Application Logic</p>
-                        <p style="font-size:150px" class="fragment" data-fragment-index="2" data-autoslide="100"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="3" data-autoslide="100"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="4" data-autoslide="100"></p>
-                    </blockquote>
+                <section data-background-image="images/4-spa-home-page.png" data-background-size="contain" data-autoslide="40000">
                 </section>
 
                 <!-- Slide 13 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="100000">
-                    <h1>Application Logic</h1>
-                    <ul>
-                        <li style="font-size:60px;">Are you a buyer or employee?</li>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;">Checkout</li>
-                    </ul>
+                <section data-background-image="images/5-spa-publications-client-services-page.png" data-background-size="contain" data-autoslide="30000">
                 </section>
 
+
                 <!-- Slide 14 -->
-                <section data-background-image="images/4-spa-home-page.png" data-background-size="contain" data-autoslide="1500">
+                <section data-background-image="images/6-spa-user-request-page.png" data-background-size="contain" data-autoslide="30000">
                 </section>
 
                 <!-- Slide 15 -->
-                <section data-background-image="images/5-spa-publications-client-services-page.png" data-background-size="contain" data-autoslide="1500">
-                </section>
-
+                <section data-background-image="images/sequelize.png" data-background-size="contain" data-autoslide="40000">
+                    <h1>Application Logic</h1>
+                    <h3>Employee Data Entry Website</h3>   
+                    <ul>
+                        <li style="font-size:60px;">Assume employee's skillset is basic data entry with no coding background</li>
+                        <li style="font-size:60px;">Create/update a book</li>
+                        <li style="font-size:60px;">Create/update an author or editor</li>
+                        <li style="font-size:60px;">Create/update a cover art artist</li>
+                        <li style="font-size:60px;">Submit changes to database</li>
+                        <li style="font-size:60px;">SQLite as a transactional SQL database engine</li>
+                        <li style="font-size:60px;">Sequelize</li>
+                    </ul>
+                </section>               
 
                 <!-- Slide 16 -->
-                <section data-background-image="images/6-spa-user-request-page.png" data-background-size="contain" data-autoslide="1500">
+                <section data-background-image="images/r-p004.jpg" data-background-size="contain" data-autoslide="40000">
+                    
                 </section>
 
                 <!-- Slide 17 -->
-                <section data-background-image="images/.jpg" data-background-size="contain" data-autoslide="10000">
-                    <blockquote>
-                        <p style="font-size:100px;"></p>
-                        <p style="font-size:100px;"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="1" data-autoslide="1500"></p>
-                        <p style="font-size:150px" class="fragment" data-fragment-index="2" data-autoslide="1500">Technologies Used</p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="3" data-autoslide="1500"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="4" data-autoslide="5000"></p>
-                    </blockquote>
+                <section data-background-image="images/bg001.jpg" data-background-size="contain" data-autoslide="30000">
+                <img src="images/r-p005.jpg" height="500" alt="logo" style="margin: 10px">
+                <img src="images/r-p006.jpg" height="500" alt="logo" style="margin: 10px">    
                 </section>
 
                 <!-- Slide 18 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="10000">
-                    <h1>Technologies Used</h1>
-                    <ul>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;"></li>
-                        <li style="font-size:60px;">JavaScript for user interaction and DOM manipulation</li>
-                        <li style="font-size:60px;">GitHub (ZenHub Project Management)</li>
-                        <li style="font-size:60px;">Web-browser-based presentation on GitHub</li>
-                    </ul>
+                <section data-background-image="images/.jpg" data-background-size="contain" data-autoslide="2000">
+                    <blockquote>
+                        <p style="font-size:150px" data-autoslide="">Technologies Used</p>
+                    </blockquote>
                 </section>
 
                 <!-- Slide 19 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="100">
+                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="40000">
+                    <h1>Technologies Used</h1>
+                    <ol>
+                      <li style="font-size:60px;">Back-end technologies used to host the content management system include:</li>
+                        <ul>                         
+                          <li style="font-size:60px;">JavaScript packages, including Node, Express</li>
+                          <li style="font-size:60px;">SQLite3 Database</li>
+                          <li style="font-size:60px;">Sequelize</li>
+                        </ul>
+                      <li style="font-size:60px;">Front-end technologies used to host the customer website and content management system:</li>
+                        <ul>
+                          <li style="font-size:60px;">Vue.js including templating tools</li>
+                        </ul>
+                      <li style="font-size:60px;">Project Development tools:</li>  
+                        <ul>
+                          <li style="font-size:60px;">WebStorm</li>
+                          <li style="font-size:60px;">GitHub (ZenHub Project Management)</li>
+                          <li style="font-size:60px;">Web-browser-based presentation on GitHub</li>
+                        </ul>
                 </section>
-                
+
+
                 <!-- Slide 20 -->
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
+                <section data-background-image="images/lightbulb.png" data-background-size="contain" data-autoslide="500">
                     <blockquote>
-                        <p style="font-size:100px;"></p>
-                        <p style="font-size:100px;"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="1" data-autoslide="100"></p>
-                        <p style="font-size:150px" class="fragment" data-fragment-index="2" data-autoslide="1500">The Application</p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="3" data-autoslide="1500"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="4" data-autoslide="5000"></p>
+                        <p style="font-size:150px" class="fragment" data-fragment-index="1" data-autoslide="3000">Next Steps and Lessons Learned</p>
+                        <p style="font-size:100px" class="fragment" data-fragment-index="2" data-autoslide="50000">Employee user authentication</p>
                     </blockquote>
                 </section>
 
                 <!-- Slide 21 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="5000">
-                    <p style="font-size:100px;">Employee Logs In</p>
+                <section data-background-image="images/la-vue-meetup.png" data-background-size="contain" data-autoslide="30000">
                 </section>
 
                 <!-- Slide 22 -->
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="20000">
-                </section>
-
-                <!-- Slide 23 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="5000">
-                    <p style="font-size:100px;">Uses application for data entry</p>
-                </section>
-
-                <!-- Slide 24 -->
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="10000">
-                </section>
-
-                <!-- Slide 25 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="5000">
-                    <p style="font-size:100px;">Buyer Selects Book</p>
-                </section>
-
-                <!-- Slide 26 -->
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
-                </section>
-
-                <!-- Slide 27 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="5000">
-                    <p style="font-size:100px;">Reads the description</p>
-                </section>
-
-                <!-- Slide 28 -->
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
-                </section>
-
-                <!-- Slide 29 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="5000">
-                    <p style="font-size:100px;">About the Author</p>
-                </section>
-
-                <!-- Slide 30 -->
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
-                </section>
-
-                <!-- Slide 31 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="2500">
-                    <p style="font-size:100px;">Decides to purchase</p>
-                </section>
-
-                <!-- Slide 32 -->
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
-                </section>
-
-                <!-- Slide 33 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="100"> 
-                </section>
-
-                <!-- Slide 34 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="10000">
-                    <p style="font-size:100px;">Expands their horizons</p>
-                </section>
-
-                <!-- Slide 35 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="100">
-                </section>
- 
-                <!-- Slide 36 -->
-                <section data-background-image="images/" data-background-size="contain" data-autoslide="100">
-                    <blockquote>
-                        <p style="font-size:100px;"></p>
-                        <p style="font-size:100px;"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="1" data-autoslide="100"></p>
-                        <p style="font-size:150px" class="fragment" data-fragment-index="2" data-autoslide="5000">Next Steps and Lessons Learned</p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="3" data-autoslide="100"></p>
-                        <p style="font-size:100px" class="fragment" data-fragment-index="4" data-autoslide="100"></p>
-                    </blockquote>
-                </section>
-
-                <!-- Slide 37 -->
-                <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="100">
-                </section>
-
-                <!-- Slide 38 -->
                 <section data-background-image="images/" data-background-size="contain" data-autoslide="2000">
                     <blockquote>
                         <p style="font-size:100px;">Thank you</p>
                     </blockquote>
                 </section>
 
-                <!-- Slide 39 -->
+                <!-- Slide 23 -->
                 <section data-background-image="images/black.jpg" data-background-size="contain" data-autoslide="500">
                 </section>
 
-                <!-- Slide 40 -->
+                <!-- Slide 24 -->
                 <section data-background-image="images/" data-background-size="contain" data-autoslide="500">
                     <blockquote>
                         <ul>
