@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-	var Author = sequelize.define("author", {
-		author: {
+	var Artist = sequelize.define("artists", {
+		artist: {
 			type: DataTypes.STRING	
 			
 		}, 
@@ -8,7 +8,9 @@ module.exports = function(sequelize, DataTypes) {
 			type: DataTypes.STRING
 			
 		}
+	}, {
+		timestamps: false
 	});
-	return Author;
+	return Artist;
 };
-		
+			

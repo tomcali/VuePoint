@@ -4,17 +4,21 @@ var passport = require("../config/passport");
 
 module.exports = function(app) {
   app.get("/api/Auth", function(req, res) {
-    db.authors.findAll({})
+    db.authors.findAll({
+      attributes: ["author"]
+    })
     .then(function(dbAuthor) {
       res.json(dbAuthor);
-    })
+    });
   });
   app.get("/api/Art", function(req, res) {
-    db.artists.findAll({})
+    db.artists.findAll({
+      attributes: ["artist"]
+    })
     .then(function(dbArtist) {
       res.json(dbArtist);
-    })
-  })
+    });
+  });
   app.get("/api/books/", function(req, res) {
     db.book.findAll({})
     .then(function(dbBook) {
@@ -49,14 +53,14 @@ module.exports = function(app) {
   });
   // Route for creating new author in the author table.
   app.post("/api/newAuth", function(req, res) {
-    Author.create({
+    authors.create({
       author: req.body.author,
       biography: req.body.biography
     })
   });
     // Route for creating new author in the author table.
   app.post("/api/newArt", function(req, res) {
-    Artist.create({
+    artists.create({
       artist: req.body.artist,
       biography: req.body.biography
     })
