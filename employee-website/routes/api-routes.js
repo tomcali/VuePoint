@@ -53,17 +53,25 @@ module.exports = function(app) {
   });
   // Route for creating new author in the author table.
   app.post("/api/newAuth", function(req, res) {
-    authors.create({
+    db.authors.create({
       author: req.body.author,
       biography: req.body.biography
-    })
+    }).then(function(dbAuth) {
+      res.json(dbAuth);
+    }).catch(function(err) {
+      res.json(err);
+    });
   });
     // Route for creating new author in the author table.
   app.post("/api/newArt", function(req, res) {
-    artists.create({
+    db.artists.create({
       artist: req.body.artist,
       biography: req.body.biography
-    })
+    }).then(function(dbArt) {
+      res.json(dbArt);
+    }).catch(function(err) {
+      res.json(err);
+    });
   });
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.

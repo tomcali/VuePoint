@@ -1,12 +1,12 @@
 console.log("in main.js");
 
 //set up author and artist selection lists
-var authorList = $("#authors");
-var artistList = $("#artists");
+var authorList = $("#authList");
+var artistList = $("#artList");
 
 getAuthors();
 getArtists();
-
+// these functions query the database tables and put their lists out to the Create Book form's author/edit and artist selection dropdowns
 function getAuthors() { 
 	console.log("in getAuthors");
 	$.get("/api/Auth", function(data) {
@@ -24,7 +24,7 @@ function getArtists() {
     	createArtSel(data);
     });
 };
-
+// these functions convert the query lists into dropdown lists on the HTML
 function createAuthSel(authList) {
 	console.log("authList" + authList);
 	authorList.empty();
@@ -55,10 +55,10 @@ function createArtSel(artList) {
 		newArtRow.attr("value", "none")
 		newArtRow.append("none</option>")
 	};
-	consol.log(newArtRow);
+	console.log(newArtRow);
 	artistList = newArtRow;
 };
-
+// event listeners
 $(document).ready(function() {
     console.log("in doc ready");
     // $(".dropdown-toggle").dropdown("toggle");
@@ -128,7 +128,7 @@ $(document).ready(function() {
         console.log("adding artist");
         submitNewArt(newArt);
     });
-
+    // functions for posting new data to database
     function submitNewBook(Book) {
         console.log("creating new book", Book);
         $.post("/api/newBook", Book, function() {
