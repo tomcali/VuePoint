@@ -68,6 +68,8 @@ module.exports = function(sequelize, DataTypes) {
 		artist4: {
 			type: DataTypes.TEXT,
 		}
+	}, {
+		timestamps: false
 	});
 	return Book;
 };

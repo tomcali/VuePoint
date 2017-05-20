@@ -4,27 +4,32 @@ console.log("in main.js");
 var authorList = $("#authors");
 var artistList = $("#artists");
 
-$.get("/api/Auth", authors, function(data) {
-    console.log('get author for dropdown');
-    authors.findAll({}).then(function(dbAuth) {
-    	res.json(dbAuth);
-    	createAuthSel(dbAuth);
-    });
-});
+getAuthors();
+getArtists();
 
-$.get("/api/Art", artists, function(data) {
-    console.log('get artist for dropdown');
-    artists.findAll({}).then(function(dbArt) {
-    	res.json(dbArt);
-    	createArtSel(dbArt);
+function getAuthors() { 
+	console.log("in getAuthors");
+	$.get("/api/Auth", function(data) {
+    	console.log('get author for dropdown' + data);
+    	// res.json(data);
+    	createAuthSel(data);
     });
-});
+};
+
+function getArtists() { 
+	console.log("in getArtists");
+	$.get("/api/Art", function(data) {
+    	console.log('get artist for dropdown' + data);
+    	// res.json(data);
+    	createArtSel(data);
+    });
+};
 
 function createAuthSel(authList) {
 	console.log("authList" + authList);
 	authorList.empty();
 	var newAuthRow = $("<option>");
-	if authList[0].author {
+	if (authList[0]) {
 		for (var i=0; i < authList.length; i++) { 
 			newAuthRow.attr("value", authList[i].author)
 			newAuthRow.append(authList[i].author + "</option>")
@@ -33,21 +38,25 @@ function createAuthSel(authList) {
 		newAuthRow.attr("value", "none")
 		newAuthRow.append("none</option>")
 	};
+	console.log(newAuthRow);
+	authorList = newAuthRow;
 };
 
 function createArtSel(artList) {
 	console.log("artList" + artList);
 	artistList.empty();
 	var newArtRow = $("<option>");
-	if artList[0].artist {
+	if (artList[0]) {
 		for (var i=0; i < artList.length; i++) { 
 			newArtRow.attr("value", artList[i].artist)
 			newArtRow.append(artList[i].artist + "</option>")
 		};	
 	} else {
-		newAuthRow.attr("value", "none")
-		newAuthRow.append("none</option>")
+		newArtRow.attr("value", "none")
+		newArtRow.append("none</option>")
 	};
+	consol.log(newArtRow);
+	artistList = newArtRow;
 };
 
 $(document).ready(function() {
@@ -128,13 +137,13 @@ $(document).ready(function() {
     };
     function submitNewAuth(Author) {
         console.log("creating new author", Author);
-        $.post("/api/newAuth", Author, function() {
+        $.post("/api/newAuth", authors, function() {
             console.log('new author created');
         });
     }
     function submitNewArt(Artist) {
         console.log("creating new artist", Artist);
-        $.post("/api/newArt", Artist, function() {
+        $.post("/api/newArt", artists, function() {
             console.log('new artist created');
         });
     }
